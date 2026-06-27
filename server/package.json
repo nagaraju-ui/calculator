@@ -1,0 +1,17 @@
+{
+  "name": "family-finance-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Family Finance Manager API (Express + node:sqlite)",
+  "scripts": {
+    "start": "node --experimental-sqlite src/index.js",
+    "seed": "node --experimental-sqlite src/seed.js",
+    "test": "node --experimental-sqlite --test src/core.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
